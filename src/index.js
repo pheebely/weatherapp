@@ -10,6 +10,28 @@ function displayTemperature(response) {
   let currentWind = response.data.wind.speed.toFixed(1);
   let iconElement = document.querySelector("#current-temp-icon");
   let currentIcon = response.data.condition.icon_url;
+
+  //change background image based on currentDesc of icon
+  let descBackgroundElement = document.querySelector(".current-temp");
+  let currentIconDesc = response.data.condition.icon;
+
+  if (currentIconDesc.includes("clear")) {
+    descBackgroundElement.style.backgroundImage = "url('/img/clear.jpg')";
+  }
+
+  if (currentIconDesc.includes("cloud")) {
+    descBackgroundElement.style.backgroundImage = "url('/img/cloudy.jpg')";
+  }
+
+  if (currentIconDesc.includes("rain")) {
+    descBackgroundElement.style.backgroundImage = "url('/img/rain_cute.jpg')";
+  }
+
+  if (currentIconDesc.includes("thunder")) {
+    descBackgroundElement.style.backgroundImage =
+      "url('/img/thunderstorm.jpg')";
+  }
+
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
   descElement.innerHTML = currentDesc;
