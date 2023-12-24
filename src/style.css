@@ -1,0 +1,138 @@
+body {
+    background: #fcf9f6;
+    font-family: "Quicksand", sans-serif; 
+    margin: 3% 15%; 
+}
+
+a {
+    color: #f57600;
+}
+
+footer {
+    font-size: 14px;
+    color: gray;
+
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+.weather-header {
+    float: left;
+    width: 65%;
+}
+
+.weather-header h2 {
+    color: #c44601;
+    
+}
+
+
+.search-header {
+    float: right;
+    width: 35%;
+}
+
+.search-header form {
+    margin-inline-end: -50px;
+}
+
+.search-input {
+    margin-top: 5%;
+    width: 85%;
+    border: 1px solid;
+    border-color: #c445012f;
+    color: #c44601;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: rgba(128, 128, 128, 0.443);
+}
+
+.search-button {
+    margin-left: 5px;
+    font-size: 16px;
+    background-color: #c44601;
+    color: white;
+    border: none;
+    padding: 15px;
+    line-height: 1;
+    border-radius: 10px;
+
+}
+
+.current-temp {
+    width: 100%;
+    background: white;
+    background-image: url(https://img.freepik.com/free-vector/background-template-with-orange-sky_1308-5167.jpg?w=1800&t=st=1703373876~exp=1703374476~hmac=9c51338dbface69155185309a33b427067cdff1e23352a35d790301ad838a5c3);
+    /* background-size: cover; */
+    padding: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    line-height: 1;
+
+}
+
+.current-temp h1 {
+    font-size: 64px;
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+
+}
+
+.current-temp h2 {
+    margin-block-end: 0;
+}
+
+.current-temp h3 {
+    margin-block-start: 10px;
+    font-size: 22px;
+    
+}
+
+#current-date {
+    float: right;
+}
+
+.current-temp-details {
+    width: 25%;
+    padding: 2%;
+    background: white;
+    border: 1px solid;
+    border-color: #c445012f;
+    border-radius: 10px;
+    line-height: 2;
+    margin-bottom: 3%;
+}
+
+.current-temp-details p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#details-desc {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#details-desc::first-letter {
+    text-transform: uppercase;
+}
+
+#details-humid-style, #details-wind-style {
+    font-weight: 700;
+    color: #c44601;
+}
+
+#details-wind-label {
+    float: inline-end;
+}
+
+
