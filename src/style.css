@@ -70,8 +70,7 @@ header {
 .current-temp {
     width: 100%;
     background: white;
-    background-image: url(https://img.freepik.com/free-vector/background-template-with-orange-sky_1308-5167.jpg?w=1800&t=st=1703373876~exp=1703374476~hmac=9c51338dbface69155185309a33b427067cdff1e23352a35d790301ad838a5c3);
-    /* background-size: cover; */
+    background-image: url(/img/background-template-with-orange-sky_1308-5167.jpg);
     padding: 3%;
     margin-bottom: 3%;
     border-radius: 10px;
