@@ -15,11 +15,24 @@ function displayTemperature(response) {
   let descBackgroundElement = document.querySelector(".current-temp");
   let currentIconDesc = response.data.condition.icon;
 
-  if (currentIconDesc.includes("clear")) {
+  if (
+    currentIconDesc.includes("clear") &&
+    formatDate.hours > 8 &&
+    formatDate.hours < 17
+  ) {
     descBackgroundElement.style.backgroundImage = "url('/img/clear.jpg')";
   }
 
-  if (currentIconDesc.includes("cloud")) {
+  if (
+    currentIconDesc.includes("clear") &&
+    formatDate.hours < 8 &&
+    formatDate.hours > 17
+  ) {
+    descBackgroundElement.style.backgroundImage =
+      "url('/img/clear_night.jpeg')";
+  }
+
+  if (currentIconDesc.includes("cloud") || currentIconDesc.includes("mist")) {
     descBackgroundElement.style.backgroundImage = "url('/img/cloudy.jpg')";
   }
 
@@ -30,6 +43,10 @@ function displayTemperature(response) {
   if (currentIconDesc.includes("thunder")) {
     descBackgroundElement.style.backgroundImage =
       "url('/img/thunderstorm.jpg')";
+  }
+
+  if (currentIconDesc.includes("snow")) {
+    descBackgroundElement.style.backgroundImage = "url('/img/snow.jpeg')";
   }
 
   cityElement.innerHTML = response.data.city;

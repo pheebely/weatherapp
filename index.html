@@ -31,20 +31,43 @@
     </header>
 
     <main>
-    <div class="current-temp">
-        <h2><span id="current-temp-icon">☀️</span></h2>
-        <h1><span id="current-temperature">13</span><span class="current-temperature-unit">°C</span></h1>
-        <h3> <span id="current-city">Los Angeles</span> <span id="current-date">Monday, 13:00</span></h3>
-    </div>
+        <div class="current-container">
+            <div class="current-temp">
+                <h2><span id="current-temp-icon">☀️</span></h2>
+                <h1><span id="current-temperature">13</span><span class="current-temperature-unit">°C</span></h1>
+                <h3> <span id="current-city">Los Angeles</span> <span id="current-date">Monday, 13:00</span></h3>
+            </div>
+        </div>
 
-    <div class="current-temp-details">
-        <p> 
-            <span id="details-desc">Moderate rain</span><br>
-            Humidity <span id="details-humid-style"><span id="details-humid">40</span>%</span>
-            <span id="details-wind-label">Wind <span id="details-wind-style"><span id="details-wind">5</span> km/h</span></span>
-        </p>
 
-    </div>
+        <div class="container-details-forecast">
+            <div class="current-temp-details">
+                <p> 
+                    <span id="details-desc">Moderate rain</span><br>
+                   <!-- <span id="humid-icon"><img src="/img/cloud.png" width="30px"></span> -->
+                   <i class="fa-solid fa-droplet"></i> Humidity <span id="details-humid-style"><span id="details-humid">40</span>%</span>
+                    <span id="details-wind-label"><i class="fa-solid fa-wind"></i> Wind <span id="details-wind-style"><span id="details-wind">5</span> km/h</span></span>
+                </p>
+            </div>
+
+            <div class="weather-forecast-container">
+                 <div class="weather-forecast">
+                    <div class="weather-forecast-day">
+                        <div class="weather-forecast-date">Tue</div>
+                        <div class="weather-forecast-icon">🌤️</div>
+                        <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature">
+                            <strong>15º</strong>
+                        </div>
+                        <div class="weather-forecast-temperature">9º</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
     <footer>
         <p>
