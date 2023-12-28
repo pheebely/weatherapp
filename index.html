@@ -35,7 +35,11 @@
             <div class="current-temp">
                 <h2><span id="current-temp-icon">☀️</span></h2>
                 <h1><span id="current-temperature">13</span><span class="current-temperature-unit">°C</span></h1>
-                <h3> <span id="current-city">Los Angeles</span> <span id="current-date">Monday, 13:00</span></h3>
+                <h3><span id="feels-like">Feels like <span id="temperature-feels">13</span>°</span><br>
+                    <span id="current-city">Paris</span><br>
+                <span id="current-country">France</span><span id="current-date">Monday, 13:00</span>
+                </h3>
+                
             </div>
         </div>
 
@@ -44,14 +48,15 @@
             <div class="current-temp-details">
                 <p> 
                     <span id="details-desc">Moderate rain</span><br>
-                   <!-- <span id="humid-icon"><img src="/img/cloud.png" width="30px"></span> -->
-                   <i class="fa-solid fa-droplet"></i> Humidity <span id="details-humid-style"><span id="details-humid">40</span>%</span>
-                    <span id="details-wind-label"><i class="fa-solid fa-wind"></i> Wind <span id="details-wind-style"><span id="details-wind">5</span> km/h</span></span>
+                   <i class="fa-solid fa-droplet"></i> Humidity <span id="details-style"><span id="details-humid">40</span>%</span><br>
+                    <span id="details-wind-label"><i class="fa-solid fa-wind"></i> Wind <span id="details-style"><span id="details-wind">5</span> km/h</span></span><br>
+                    <i class="fa-solid fa-arrows-down-to-line"></i> Pressure <span id="details-style"><span id="details-pressure">1026</span> hPa</span>
+                
                 </p>
             </div>
 
             <div class="weather-forecast-container">
-                 <div class="weather-forecast">
+                 <div class="weather-forecast" id="forecast">
                     <div class="weather-forecast-day">
                         <div class="weather-forecast-date">Tue</div>
                         <div class="weather-forecast-icon">🌤️</div>

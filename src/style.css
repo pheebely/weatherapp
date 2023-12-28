@@ -11,6 +11,7 @@ a {
 footer {
     font-size: 14px;
     color: gray;
+    margin-top: 3%;
 
 }
 
@@ -83,7 +84,7 @@ form {
     background-image: url(/img/clear.jpg);
     background-size: cover;
     background-blend-mode: darken;
-    padding: 3%;
+    padding: 2% 4%;
     margin-right: 0%;
     margin-bottom: 3%;
     border-radius: 10px;
@@ -94,7 +95,8 @@ form {
 .current-temp h1 {
     font-size: 64px;
     margin-block-start: 2px;
-    margin-block-end: 2px;
+    margin-block-end: 0px;
+    line-height: 1;
 
 }
 
@@ -103,16 +105,31 @@ form {
 }
 
 .current-temp h3 {
-    margin-block-start: 10px;
+    margin-block-start: 0px;
     font-size: 22px;
     
 }
 
 #current-date {
     float: right;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
+    color: rgba(0, 0, 0, 0.66);
+
 }
+
+#current-country{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+#feels-like {
+    font-size: 14px;
+    line-height: 3;
+
+}
+
 
 .current-container {
     display: inline;
@@ -132,12 +149,13 @@ form {
     border: 1px solid;
     border-color: #c445012f;
     border-radius: 10px;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .current-temp-details p {
     margin-block-start: 0;
     margin-block-end: 0;
+
 }
 
 .current-temp-details img {
@@ -145,29 +163,32 @@ form {
     vertical-align: middle;
 }
 
-.fa-droplet, .fa-wind{
-    color: #3e8cf4;
+.fa-droplet, .fa-wind, .fa-arrows-down-to-line {
+    color: #316ebd;
 }
 
 
 #details-desc {
     font-size: 20px;
     font-weight: 700;
-    line-height: 3;    
+    text-transform: capitalize;  
+    line-height: 1;
+
 }
 
 #details-desc::first-letter {
     text-transform: uppercase;
 }
 
-#details-humid-style, #details-wind-style {
+#details-style {
     font-weight: 700;
     color: #c44601;
+    line-height: 2;
 }
 
-#details-wind-label {
+/* #details-wind-label {
     float: inline-end;
-}
+} */
 
 .weather-forecast-container {
     flex-grow: 3;
@@ -188,7 +209,7 @@ form {
   
   .weather-forecast-date {
     text-align: center;
-    color: rgba(39, 33, 66, 0.4);
+    color: rgba(0, 0, 0, 0.66);
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 10px;
